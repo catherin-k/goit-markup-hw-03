@@ -119,7 +119,11 @@ span.accent {
 .hero {
   text-align: center;
 }
+.hero.container {
+  padding: 200px 0px;
+}
 .hero-title {
+  margin: 0px 0px 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -146,6 +150,12 @@ span.accent {
 }
 
 /* Секции*/
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
 .section .title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -156,8 +166,16 @@ span.accent {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
 /*  Feature */
+
+/* .feature-box {
+  padding-bottom: 94px;
+  padding-top: 94px;
+} */
 .feature-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.167;
@@ -165,7 +183,16 @@ span.accent {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+.feature.list {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-item {
+  width: calc((100% - 90px) / 4);
+}
 .feature-description {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
