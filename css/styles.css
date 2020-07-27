@@ -239,9 +239,20 @@ span.accent {
 }
 .list.team {
   display: flex;
+  flex-wrap: wrap;
+}
+.team-item {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+  padding-bottom: 24px;
+}
+.team-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .member-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
@@ -251,6 +262,7 @@ span.accent {
   color: var(--title-text-color);
 }
 .position {
+  margin-top: 0px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.188;
@@ -260,6 +272,23 @@ span.accent {
 
   color: var(--primary-text-color);
 }
+.team.socials {
+  display: flex;
+  justify-content: center;
+}
+
+/* Clients */
+.clients.list {
+  display: flex;
+}
+.clients-item {
+  width: calc((100% - 30px * 5) / 6);
+  margin-right: 30px;
+}
+.clients-item:nth-child(6n) {
+  margin-right: 0;
+}
+
 /* Footer */
 footer {
   background-color: var(--background-color-footer);
