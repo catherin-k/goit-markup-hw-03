@@ -54,7 +54,6 @@ img {
 }
 /* лого */
 .logo {
-  margin-right: 85px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -63,7 +62,10 @@ img {
   color: var(--black-color);
   letter-spacing: 0.03em;
 }
-.logo.footer {
+.main-nav .logo {
+  margin-right: 85px;
+}
+.logo-footer {
   color: var(--white-color);
 }
 .logo:hover,
@@ -293,6 +295,17 @@ span.accent {
 footer {
   background-color: var(--background-color-footer);
 }
+.footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address {
+  margin-top: 20px;
+}
 
 .address .link {
   font-style: normal;
@@ -307,7 +320,15 @@ footer {
 .address .address-item {
   color: var(--white-color);
 }
+
+.join-us.list {
+  display: flex;
+}
+
 .subscribe {
+  display: block;
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
