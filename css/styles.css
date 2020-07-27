@@ -47,7 +47,11 @@ img {
   margin-right: auto;
   outline: 2px solid tomato;
 }
-
+/* header */
+.page.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 /* лого */
 .logo {
   margin-right: 85px;
@@ -74,8 +78,6 @@ span.accent {
 .nav {
   display: flex;
   justify-content: flex-end;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .main-nav {
   display: flex;
@@ -235,6 +237,10 @@ span.accent {
 .section.team {
   background-color: var(--background-color-second);
 }
+.list.team {
+  display: flex;
+}
+
 .member-name {
   font-weight: 500;
   font-size: 16px;
