@@ -286,6 +286,7 @@ span.accent {
 /* Clients */
 .clients.list {
   display: flex;
+  flex-wrap: wrap;
 }
 .clients-item {
   width: calc((100% - 30px * 5) / 6);
