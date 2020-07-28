@@ -312,7 +312,9 @@ footer {
 .address {
   margin-top: 20px;
 }
-
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .address .link {
   font-style: normal;
   font-weight: 400;
@@ -323,7 +325,7 @@ footer {
   color: var(--footer-contacts-color);
 }
 
-.address .address-item {
+.address .address-map {
   color: var(--white-color);
 }
 
