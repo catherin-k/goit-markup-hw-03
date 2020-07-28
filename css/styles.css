@@ -89,6 +89,9 @@ span.accent {
 .site-nav {
   display: flex;
 }
+.site-nav .link {
+  padding-bottom: 28px;
+}
 .site-nav .item + .item {
   margin-left: 50px;
 }
@@ -108,7 +111,10 @@ span.accent {
   color: var(--title-text-color);
 }
 .site-nav .link:hover,
-.site-nav .link:focus,
+.site-nav .link:focus {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
 .auth-nav .link:hover,
 .auth-nav .link:focus,
 .address .link:hover,
@@ -353,10 +359,14 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  background-color: var(--background-color-second);
+  border: transparent;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
   color: var(--white-color);
+  background-color: var(--accent-color);
 }
 .work.list {
   display: flex;
